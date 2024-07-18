@@ -6,7 +6,8 @@
   "scripts": {
     "serve:host": "nx run host:serve",
     "serve:remote": "nx run remote:serve",
-    "serve": "nx run-many -t serve -p host remote"
+    "serve": "nx run-many -t serve -p host remote",
+    "postinstall": "node node_modules/@angular-architects/native-federation/src/patch-angular-build.js"
   },
   "dependencies": {
     "@angular-architects/native-federation": "~18.0.2",
